@@ -93,6 +93,8 @@ class LocationOperator {
             this.website = operator['WebsiteURL'] !== null ? operator['WebsiteURL'] : "undefined";
             this.id = operator['ID'];
             this.title = operator['Title'];
+            this.phonePrimary = operator['PhonePrimaryContact'] !== null ? operator['PhonePrimaryContact'] : 'undefined';
+            this.phoneSecondary = operator['PhoneSecondaryContact'] !== null ? operator['PhoneSecondaryContact'] : 'undefined';
         }
     }
 }
