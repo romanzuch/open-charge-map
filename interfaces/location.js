@@ -1,7 +1,7 @@
 class GeoData {
     constructor(ocmLocation) {
         if (ocmLocation !== null) {
-            this.type = 'Point';
+            this.type = 'Feature';
             this.geometry = new GeoGeometry(ocmLocation['AddressInfo']);
             this.properties = new Location(ocmLocation);
         }
