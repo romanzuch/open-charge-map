@@ -32,7 +32,7 @@ class Handler {
         this.power = this.getValueOrDefault(params, 'power', null);
         this.isoCode = this.getValueOrDefault(params, 'isoCode', 'DE');
         this.key = this.getValueOrDefault(params, 'key', process.env.API_KEY);
-        this.count = this.getValueOrDefault(params, 'count', 10);
+        this.count = this.getValueOrDefault(params, 'count', 100);
         this.distanceUnit = 'km';
         this.test = this.getValueOrDefault(params, 'test', null);
     }
